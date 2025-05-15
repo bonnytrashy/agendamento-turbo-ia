@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +97,58 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-custom-black text-custom-white font-open-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-extrabold;
+  }
+
+  .btn-cta {
+    @apply bg-custom-darkBlue text-custom-white px-8 py-4 rounded-full uppercase font-montserrat font-bold tracking-wider border-2 border-custom-neonBlue shadow-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,168,243,0.7)] transform hover:scale-105;
+  }
+
+  .section-title {
+    @apply text-4xl sm:text-5xl font-montserrat font-extrabold mb-6 leading-tight;
+  }
+
+  .circuit-bg {
+    background-color: #000000;
+    background-image: radial-gradient(#011d4520 1px, #00000000 1px);
+    background-size: 20px 20px;
+  }
+
+  .digital-texture {
+    position: relative;
+  }
+
+  .digital-texture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(125deg, rgba(1, 29, 69, 0.05) 25%, transparent 25%), 
+                      linear-gradient(225deg, rgba(1, 29, 69, 0.05) 25%, transparent 25%), 
+                      linear-gradient(315deg, rgba(1, 29, 69, 0.05) 25%, transparent 25%), 
+                      linear-gradient(45deg, rgba(1, 29, 69, 0.05) 25%, transparent 25%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 0, 30px -30px, 0px 30px;
+    z-index: -1;
+  }
+
+  .neon-text {
+    @apply text-custom-neonBlue;
+    text-shadow: 0 0 5px rgba(0, 168, 243, 0.5), 0 0 10px rgba(0, 168, 243, 0.3);
+  }
+
+  .neon-border {
+    @apply border-custom-neonBlue;
+    box-shadow: 0 0 5px rgba(0, 168, 243, 0.5), 0 0 10px rgba(0, 168, 243, 0.3);
+  }
+
+  .card-shadow {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(1, 29, 69, 0.1);
   }
 }
