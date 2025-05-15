@@ -9,6 +9,7 @@ import EnemySection from "../components/EnemySection";
 import DifferentialsSection from "../components/DifferentialsSection";
 import ComparisonSection from "../components/ComparisonSection";
 import AuthoritySection from "../components/AuthoritySection";
+import FounderSection from "../components/FounderSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import SuccessStoriesSection from "../components/SuccessStoriesSection";
 import CtaSection from "../components/CtaSection";
@@ -57,6 +58,7 @@ const Index = () => {
       <DifferentialsSection />
       <ComparisonSection />
       <AuthoritySection />
+      <FounderSection />
       <TestimonialsSection />
       <SuccessStoriesSection />
       <CtaSection />
